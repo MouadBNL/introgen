@@ -1,0 +1,17 @@
+.vp { position: relative; width: 100%; height: 100%; background: #070708; display: flex; align-items: center; justify-content: center; overflow: hidden; min-height: 0; }
+.vp-frame { position: relative; box-shadow: 0 0 0 1px var(--line); background: #000; }
+.vp-canvas { display: block; width: 100%; height: 100%; touch-action: none; outline: none; }
+.vp-safe { position: absolute; inset: 0; pointer-events: none; }
+.vp-safe i, .vp-safe b { position: absolute; border: 1px solid rgba(255, 255, 255, 0.28); }
+.vp-safe i { inset: 5%; }
+.vp-safe b { inset: 10%; border-style: dashed; }
+.vp-tools { position: absolute; top: 8px; left: 8px; display: flex; flex-direction: column; gap: 1px; background: rgba(20, 20, 23, 0.86); border: 1px solid var(--line); border-radius: var(--radius); padding: 2px; backdrop-filter: blur(6px); }
+.vp-tool { width: 26px; height: 26px; display: grid; place-items: center; background: none; border: 0; border-radius: 3px; color: var(--text-1); cursor: pointer; padding: 0; }
+.vp-tool:hover { background: var(--bg-3); color: var(--text-0); }
+.vp-tool:focus-visible { outline: 1px solid var(--accent); }
+.vp-tool.on { background: var(--accent-soft); color: var(--accent-2); }
+.vp-tool.sep { margin-top: 5px; position: relative; }
+.vp-tool.sep::before { content: ''; position: absolute; top: -3.5px; left: 4px; right: 4px; height: 1px; background: var(--line-strong); }
+.vp-info { position: absolute; right: 10px; bottom: 7px; display: flex; gap: 8px; align-items: center; font: 500 10px var(--font-mono); color: var(--text-2); pointer-events: none; }
+.vp-badge { color: var(--accent-2); letter-spacing: 0.08em; }
+.vp-err { position: absolute; inset: 0; display: grid; place-items: center; color: var(--text-1); font-size: 13px; padding: 24px; text-align: center; }

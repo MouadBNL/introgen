@@ -1,0 +1,38 @@
+/* Introgen design tokens. Dark-only, as is tradition for motion tools. */
+:root {
+  --bg-0: #0b0b0d;        /* app chrome / deepest */
+  --bg-1: #141417;        /* panels */
+  --bg-2: #1b1b1f;        /* panel headers, inputs */
+  --bg-3: #24242a;        /* hover, raised */
+  --bg-4: #2e2e35;        /* active */
+  --line: #2a2a31;        /* hairlines */
+  --line-strong: #3a3a43;
+  --text-0: #f2f2f5;
+  --text-1: #b9b9c3;
+  --text-2: #7c7c88;
+  --text-3: #55555f;
+  --accent: #ff2d55;      /* signal red: playhead, selection, record */
+  --accent-2: #ff6482;
+  --accent-soft: rgba(255, 45, 85, 0.16);
+  --key: #ffcc4d;         /* keyframes */
+  --key-sel: #ffffff;
+  --audio: #3ddc97;       /* audio clips & waveforms */
+  --sync: #bf5af2;        /* sync hits header */
+  --beat: rgba(255, 255, 255, 0.05);
+  --bar: rgba(255, 255, 255, 0.11);
+  --danger: #ff453a;
+  --radius: 5px;
+  --radius-lg: 9px;
+  --font-ui: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --fs: 11.5px;
+  --fs-sm: 10.5px;
+  --row: 24px;            /* timeline/layer row height */
+  --shadow: 0 12px 40px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(255, 255, 255, 0.06);
+  /* Layer-type label colors, like AE label colors */
+  --lt-text3d: #ff6482; --lt-text2d: #ff9f0a; --lt-logo: #ff375f; --lt-image: #ffd60a;
+  --lt-particles: #64d2ff; --lt-streaks: #5ac8fa; --lt-splash: #bf5af2; --lt-dots: #30d158;
+  --lt-debris: #ac8e68; --lt-lightning: #5e5ce6; --lt-shockwave: #66d4cf; --lt-flare: #ffd60a;
+  --lt-light: #f5f5f7; --lt-camera: #8e8e93; --lt-post: #a2845e; --lt-background: #48484a; --lt-null: #636366;
+  color-scheme: dark;
+}
